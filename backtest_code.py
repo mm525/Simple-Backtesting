@@ -6,7 +6,7 @@ from fredapi import Fred
 
 fred = Fred('[my_FRED_API]')
 
-class single_MA():
+class simple_backtest():
     
     def __init__(self, ma = 60, start = '1971-02-05', end = '2022-08-11'):
         self.ma = ma
@@ -63,7 +63,7 @@ class single_MA():
         # Should also add a rolling sharpe ratio.
        
 ## Example input:
-# example = single_MA(15, '2003-11-05')
+# example = simple_backtest(15, '2003-11-05')
 # example.run_backtest()
 # example.view_results()
 # example.max_drawdown()
