@@ -38,8 +38,7 @@ class simple_backtest():
     def view_results(self):
         fig = go.Figure()
         for Return in self.test.columns[-2:]:
-            fig.add_trace(go.Scatter(x = self.test['Date'], y = self.test[Return],
-                                     mode = 'lines', name = Return))
+            fig.add_trace(go.Scatter(x = self.test['Date'], y = self.test[Return], mode = 'lines', name = Return))
         fig.show()
         
     def max_drawdown(self):
